@@ -1,0 +1,511 @@
+/* DEFINIÇÕES GERAIS */
+
+/* Fonte */
+@font-face {
+    font-family: "PlayFair";
+    src: url(PlayfairDisplaySC-Regular.ttf)
+}
+
+body{
+    font-family: "PlayFair", sans-serif;
+   
+}
+
+a{
+    color: #ffbd19 ;
+
+}
+ a:hover{
+    color: #FFE091  ;
+
+}
+
+.topoOffMenu{
+    width: 100%;
+    height: 150px;
+}
+
+
+
+/* PÁGINA PRINCIPAL */
+
+/* CABEÇALHO */
+
+header{
+    background-color: #092147dc ;
+    /* background-image: linear-gradient(to bottom right, #092147c4, #08556cc4,  #092147c4 ); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2000;
+    color: #ffee52 ;
+
+}
+
+
+.navbar-brand{
+    color: #ffee52 ;
+    text-align: center;
+    font-weight: 1000;
+
+  
+}
+.navbar-brand:hover{
+    color: #FFE091;
+}
+.nav-link{
+    color: #ffbd19 ;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 550;
+  
+}
+
+.nav-link:hover{
+    color: #FFE091 ;
+}
+
+
+
+
+/* Carrosel */
+
+
+
+.container-fluid {
+    margin-top: 0;
+
+
+}
+
+.carousel-item img {
+    min-height: 400px;
+    max-height: 700px;
+   
+
+}
+
+.carousel-caption{
+    background-color: #092147b2 ;
+    border-radius: 3rem;
+}
+.carousel-caption p{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color:#fdea79;
+    font-variant: small-caps;
+    
+}
+
+.carousel-caption h4{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color:#ffce55;
+}
+
+.carousel-caption{
+    color: black;
+
+}
+
+/* Botão Volta ao Topo */
+
+#botao-topo img {
+    width: 80px;
+    position: fixed;
+    bottom: 200px;
+    right: 30px;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+/* cards */
+
+.icone-principal{
+    width: 80%;
+    text-align: center;
+}
+
+.orcamento{
+
+    background-image: linear-gradient(to right,  #1a488e,#092147,  #1a488e );
+    color: #ffce55 ;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 5px;
+    font-weight: 500;
+
+    
+}
+
+#infoFinais{
+    background-color:#092147;
+    color: #ffce55;
+    margin-right: -15px;
+    margin-left: -15px;
+
+ 
+   
+}
+
+/*REQUISITO CSS FOOTER */
+footer{
+    color: #ffee52 ;
+    background-color: black ;
+    padding: 5px 20px ;
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+
+#copyright{
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.imgFooter{
+    width: 50px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+/* CONTATO -------------- */
+
+#formCad{
+    border:4px solid #1a488e;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+
+}
+
+#formCad div div input{
+    border:2px solid #1a488e;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+
+}
+
+#formCad div div select{
+    border:2px solid #1a488e;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+#formCad  div textarea{
+    border:2px solid #1a488e;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+/* CARDS TRABALHOS------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.container {
+    margin-top: 100px
+}
+
+.container .row .col-lg-4 {
+    display: flex;
+    justify-content: center
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    margin: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 250px;
+    max-height: 300px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+.card .card-image {
+    width: 100%;
+    max-height: 340px;
+    opacity: 0.9;
+
+}
+
+.card .card-image img {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: -180px;
+    color: #fff;
+    background: #092147a4;
+    backdrop-filter: blur(15px);
+    min-height: 140px;
+    width: 100%;
+    transition: bottom .4s ease-in;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #092147;
+
+}
+
+.card .card-text {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #092147;
+    background-color: #ffe091;
+    border-radius: 10px;
+    padding: 2px;
+
+}
+
+.card:hover .card-content {
+    bottom: 0px
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content h5 {
+    transform: translateY(10px);
+    opacity: 1
+}
+
+.card .card-content h4,
+.card .card-content h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: 0.8s;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition-delay: 0.2s
+}
+
+.card .card-content h5 {
+    transition: 0.5s;
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 2px
+}
+
+.card .card-content .social-icons {
+    list-style: none;
+    padding: 0
+}
+
+.card .card-content .social-icons li {
+    margin: 10px;
+    transition: 0.5s;
+    transition-delay: calc(0.15s * var(--i));
+    transform: translateY(50px)
+}
+
+.card:hover .card-content .social-icons li {
+    transform: translateY(20px)
+}
+
+.card .card-content .social-icons li a {
+    color: #fff
+}
+
+.card .card-content .social-icons li a span {
+    font-size: 1.3rem
+}
+
+@media(max-width: 991.5px) {
+    .container {
+        margin-top: 20px
+    }
+
+    .container .row .col-lg-4 {
+        margin: 20px 0px
+    }
+}
+
+/* CARS 3D -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.container {
+    transform-style: preserve-3d
+}
+
+.container .box {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer
+}
+
+.container .box .body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease
+}
+
+.container .box .body .imgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d
+}
+
+.container .box .body .imgContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+    border: 3px solid #092147;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.container .box .body .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #092147;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg)
+}
+
+.container .box:hover .body {
+    transform: rotateY(180deg)
+}
+
+.container .box .body .content div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #ffce55, #D3AD36, #BB9B16, #A77A00);
+    transform: translateZ(100px);
+    color: #092147;
+    font-weight: 900;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+
+}
+
+.container .box .body .content div h3 {
+    letter-spacing: 1px;
+
+
+}
+
+/* A EMPRESA---------- */
+
+
+.line {
+    color: #1a488e ;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+    .line h1{
+        font-weight: 600;
+       
+    }
+
+
+
+.cards {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 2px solid;
+   align-items: baseline;    
+    padding: 10px;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+
+}
+
+
+.cards:hover {
+   
+    transform: scale(1.1)
+}
+
+/* BARRA DE ROLAGEM */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+::-webkit-scrollbar {
+    width: 15px
+}
+
+::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: #092147;
+    border: 2px solid #ffbd19;
+    border-radius:15px
+}
+/* PAG PRINCIPAL CARDS 1 */
+
+.line1 {
+    color: #1a488e ;
+ 
+    font-weight: 600;
+    
+}
+
+
+
+
+
+.cards {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 3px solid;
+    align-items: baseline;    
+    padding: 10px;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+
+}
+
+
+.cards:hover {
+   
+    transform: scale(1.1)
+}
+
+
+
+
+
+
+
+
